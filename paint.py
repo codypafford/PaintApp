@@ -56,17 +56,17 @@ class Paint:
         self.c = Canvas(self.root, bg='white', width=900, height=900)
         self.c.grid(row=2, columnspan=6)
         # pafford image
-        filename = PhotoImage(file = "/home/codyp/Desktop/Paint/pafford.png")
-        self.image = self.c.create_image(60, 30, image=filename)
-        pic_list.append(self.image)
+      #  filename = PhotoImage(file = "C:\\Users\cpafford\Desktop\Paint\pafford.py")
+      #  self.image = self.c.create_image(60, 30, image=filename)
+      #  pic_list.append(self.image)
 
         # self.c.tag_bind(self.image, '<Button1-Motion>', self.move)
         # self.c.tag_bind(self.image, '<ButtonRelease-1>', self.release)
 
         # paint image
-        filename1 = PhotoImage(file = "/home/codyp/Desktop/Paint/paint.png")
-        self.image2 = self.c.create_image(60, 60, image=filename1)
-        pic_list.append(self.image2)
+      #  filename1 = PhotoImage(file = "/home/codyp/Desktop/Paint/paint.png")
+      #  self.image2 = self.c.create_image(60, 60, image=filename1)
+      #  pic_list.append(self.image2)
 
 
 
@@ -111,7 +111,7 @@ class Paint:
         self.active_button = self.pen_button
         self.c.bind('<B1-Motion>', self.paint)
         self.c.bind('<ButtonRelease-1>', self.reset)
-        self.selected_image = pic_list[-1]
+       # self.selected_image = pic_list[-1]
 
         try:
             if self.selected_image:
